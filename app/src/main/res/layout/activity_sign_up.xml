@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/shape" />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shape"
+        android:text="Sign Up"
+        android:textSize="32sp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textColor="@color/black_100"
+        android:layout_marginTop="24dp"
+        android:paddingHorizontal="35dp"/>
+
+    <TextView
+        android:id="@+id/tvDescSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSignUp"
+        android:text="Create an account to get started."
+        android:textSize="13sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black_100"
+        android:paddingHorizontal="35dp"/>
+
+    <LinearLayout
+        android:id="@+id/lySignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvDescSignUp"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/textview_shape"
+            android:hint="Enter your name"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/textview_shape"
+            android:hint="Enter your email"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/textview_shape"
+            android:hint="Enter your password"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:password="true"/>
+
+        <EditText
+            android:id="@+id/edConfimPassword"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/textview_shape"
+            android:hint="Confirm password"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:password="true"
+            android:fontFamily="@font/poppins_regular"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@id/lySignUp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:width="340dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semi_bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignUp"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="35dp">
+
+        <TextView
+            android:id="@+id/tvSignInDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account ?"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/black_100"/>
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/primary"
+            android:layout_marginLeft="2dp"/>
+    </LinearLayout>
+</RelativeLayout>

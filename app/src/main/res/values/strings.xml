@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Spare2Share</string>
+    <string name="welcome_to_spare2share">Welcome To Spare2Share</string>
+    <string name="description_started_one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum dictum tempus, interdum at dignissim metus. Ultricies sed nunc.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

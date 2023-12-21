@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.SignInActivity">
+
+    <ImageView
+        android:id="@+id/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/shape" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shape"
+        android:text="Sign In"
+        android:textSize="32sp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textColor="@color/black_100"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="35dp"/>
+
+    <TextView
+        android:id="@+id/tvDescSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSignIn"
+        android:text="Let's get started, sign in now!"
+        android:textSize="13sp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black_100"
+        android:paddingHorizontal="35dp"/>
+
+    <ImageView
+        android:id="@+id/vector"
+        android:layout_width="258dp"
+        android:layout_height="195dp"
+        android:layout_below="@id/tvDescSignIn"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/vector2" />
+
+    <LinearLayout
+        android:id="@+id/lySignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/vector"
+        android:paddingHorizontal="30dp">
+
+        <EditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/textview_shape"
+            android:hint="Enter your email"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/textview_shape"
+            android:hint="Enter your password"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_below="@id/lySignIn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:width="340dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_semi_bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignIn"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="35dp">
+
+        <TextView
+            android:id="@+id/tvSignUpDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t have an account ?"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/black_100"/>
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/primary"
+            android:layout_marginLeft="2dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
